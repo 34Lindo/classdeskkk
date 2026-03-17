@@ -49,8 +49,9 @@ textarea.inp{resize:vertical;min-height:65px;}
 #loginPage{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;}
 .login-card{background:var(--sur);border:1px solid var(--bd2);border-radius:18px;width:100%;max-width:400px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5);}
 .login-top{padding:32px 32px 24px;text-align:center;background:linear-gradient(160deg,var(--sur2),var(--sur));}
-.login-logo{width:52px;height:52px;background:white;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;color:#090b10;margin:0 auto 16px;}
-.login-top h1{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;}
+.login-logo{width:90px;height:90px;background:white;padding:6px;border-radius:14px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:32px;color:#a855f7;font-weight:bold;}
+.login-top h1{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:#6d28a0;}
+.login-top h1 span{font-size:18px;color:#f59e0b;display:block;}
 .login-top p{font-size:13px;color:var(--tx2);margin-top:5px;}
 .login-body{padding:28px 32px;}
 .login-tabs{display:flex;background:var(--sur2);border-radius:var(--rs);padding:3px;gap:3px;margin-bottom:22px;}
@@ -65,8 +66,10 @@ textarea.inp{resize:vertical;min-height:65px;}
 header{position:sticky;top:0;z-index:200;background:rgba(9,11,16,.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);}
 .hdr{max-width:1360px;margin:0 auto;padding:0 22px;height:58px;display:flex;align-items:center;gap:10px;}
 .brand{display:flex;align-items:center;gap:9px;flex-shrink:0;}
-.brand-icon{width:32px;height:32px;background:white;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;color:#090b10;}
-.brand span{font-family:'Syne',sans-serif;font-size:15px;font-weight:800;}
+.brand-icon{width:38px;height:38px;background:white;padding:3px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:20px;color:#a855f7;font-weight:bold;}
+.brand-text{display:flex;flex-direction:column;line-height:1.1;}
+.brand-text span:first-child{font-family:'Syne',sans-serif;font-size:13px;font-weight:800;color:#a855f7;}
+.brand-text span:last-child{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;color:#f59e0b;letter-spacing:.3px;}
 .hdiv{width:1px;height:24px;background:var(--bd);flex-shrink:0;}
 
 /* Class switcher */
@@ -214,43 +217,6 @@ td.c{text-align:center;}
   .csw-name{max-width:130px;}
   .brand span,.hdiv{display:none;}
 }
-.report-header{display:flex;align-items:center;gap:18px;padding:20px 22px;border-bottom:1px solid var(--bd);}
-.report-avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--acc),#7c3aed);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:#fff;flex-shrink:0;}
-.report-meta{flex:1;}
-.report-name{font-family:'Syne',sans-serif;font-size:19px;font-weight:800;}
-.report-sub{font-size:12px;color:var(--tx2);margin-top:3px;}
-.report-term-badge{background:var(--acc-d);border:1px solid rgba(168,85,247,.25);border-radius:20px;padding:4px 12px;font-size:11px;color:var(--acc);font-weight:600;}
-.subject-row{display:grid;grid-template-columns:180px 1fr auto auto auto;gap:12px;align-items:center;padding:11px 22px;border-bottom:1px solid rgba(34,40,64,.5);}
-.subject-row:last-child{border-bottom:none;}
-.subject-row:hover{background:rgba(168,85,247,.03);}
-.subject-name{font-family:'Syne',sans-serif;font-weight:700;font-size:13px;}
-.subject-class{font-size:10.5px;color:var(--tx3);margin-top:1px;}
-.test-pills{display:flex;gap:5px;flex-wrap:wrap;}
-.test-pill{background:var(--sur2);border:1px solid var(--bd);border-radius:6px;padding:3px 8px;font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--tx2);}
-.test-pill.good{border-color:rgba(52,211,153,.3);color:#34d399;background:rgba(52,211,153,.08);}
-.test-pill.warn{border-color:rgba(252,211,77,.3);color:var(--yel);background:rgba(252,211,77,.08);}
-.test-pill.bad{border-color:rgba(248,113,113,.3);color:var(--red);background:rgba(248,113,113,.08);}
-.test-pill.na{opacity:.4;}
-.subject-avg{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;text-align:right;min-width:52px;}
-.subject-grade{min-width:36px;text-align:right;}
-.report-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;padding:18px 22px;background:var(--sur2);border-top:1px solid var(--bd);}
-.summ-card{text-align:center;padding:12px;background:var(--sur);border:1px solid var(--bd);border-radius:var(--rs);}
-.summ-val{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:600;line-height:1;}
-.summ-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--tx3);margin-top:4px;font-weight:600;}
-.search-chip{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;background:var(--sur2);border:1px solid var(--bd);border-radius:20px;cursor:pointer;font-size:12.5px;transition:all .2s;}
-.search-chip:hover{border-color:var(--acc);color:var(--acc);}
-.search-chip.active{border-color:var(--acc);background:var(--acc-d);color:var(--acc);}
-.endterm-bar{height:8px;background:var(--bd);border-radius:4px;overflow:hidden;flex:1;}
-.endterm-fill{height:100%;border-radius:4px;transition:width .5s ease;}
-.user-card{display:flex;align-items:center;gap:11px;padding:10px 12px;background:var(--sur2);border:1px solid var(--bd);border-radius:var(--rs);transition:border-color .2s;}
-.user-card:hover{border-color:var(--bd2);}
-.user-card-avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--acc),#7c3aed);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:13px;font-weight:800;color:#fff;flex-shrink:0;}
-.user-card-info{flex:1;min-width:0;}
-.user-card-name{font-family:'Syne',sans-serif;font-weight:700;font-size:13px;}
-.user-card-meta{font-size:10.5px;color:var(--tx3);margin-top:1px;}
-.user-card-you{background:var(--acc-d);border:1px solid rgba(168,85,247,.2);border-radius:20px;padding:2px 8px;font-size:10px;color:var(--acc);font-weight:600;}
-@media(max-width:768px){.subject-row{grid-template-columns:1fr auto auto;}.test-pills{display:none;}}
-
 @media print{
   body{background:#fff;color:#000;}body::before{display:none;}
   header,.no-print{display:none!important;}
@@ -272,9 +238,9 @@ td.c{text-align:center;}
 <div id="loginPage" class="page">
   <div class="login-card">
     <div class="login-top">
-      <div class="login-logo" style="width:90px;height:90px;background:white;padding:6px;border-radius:14px;"><img src="data:image/png;base64,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" style="width:100%;height:100%;object-fit:contain;border-radius:8px;"></div>
-      <h1 style="color:#6d28a0;">Umliba Loyembili<br><span style="font-size:18px;color:#f59e0b;">Edupreneurs</span></h1>
-      <p>Teacher grade &amp; attendance portal</p>
+      <div class="login-logo">📚</div>
+      <h1>Umliba Loyembili<br><span>Edupreneurs</span></h1>
+      <p>Teacher grade & attendance portal</p>
     </div>
     <div class="login-body">
       <div class="login-tabs">
@@ -310,7 +276,13 @@ td.c{text-align:center;}
 
   <header class="no-print">
     <div class="hdr">
-      <div class="brand"><div class="brand-icon" style="width:38px;height:38px;background:white;padding:3px;border-radius:9px;"><img src="data:image/png;base64,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" style="width:100%;height:100%;object-fit:contain;border-radius:6px;"></div><div style="display:flex;flex-direction:column;line-height:1.1;"><span style="font-family:'Syne',sans-serif;font-size:13px;font-weight:800;color:#a855f7;">Umliba Loyembili</span><span style="font-family:'Syne',sans-serif;font-size:10px;font-weight:700;color:#f59e0b;letter-spacing:.3px;">EDUPRENEURS</span></div></div>
+      <div class="brand">
+        <div class="brand-icon">📚</div>
+        <div class="brand-text">
+          <span>Umliba Loyembili</span>
+          <span>EDUPRENEURS</span>
+        </div>
+      </div>
       <div class="hdiv"></div>
       <!-- Class switcher -->
       <div class="csw" id="cswWrap">
@@ -330,14 +302,12 @@ td.c{text-align:center;}
         <div class="tnav">
           <button class="tbtn active" onclick="switchTab('grades',this)"><i class="fas fa-chart-bar"></i> Grades</button>
           <button class="tbtn" onclick="switchTab('attendance',this)"><i class="fas fa-calendar-check"></i> Attendance</button>
-          <button class="tbtn" onclick="switchTab('reports',this)"><i class="fas fa-user-graduate"></i> Reports</button>
         </div>
         <button class="btn btn-ghost btn-sm no-print" onclick="openStudentModal()"><i class="fas fa-user-plus"></i> Add Student</button>
         <button class="btn btn-blu btn-sm no-print" onclick="openSettingsModal()"><i class="fas fa-sliders-h"></i> Settings</button>
         <div class="tpill no-print">
           <div class="tavatar" id="tAvatar">?</div>
           <span id="tName">—</span>
-          <button id="adminCogBtn" onclick="openAdminPanel()" title="Manage users" style="margin-right:2px;display:none;"><i class="fas fa-users-cog"></i></button>
           <button onclick="doLogout()" title="Sign out"><i class="fas fa-right-from-bracket"></i></button>
         </div>
       </div>
@@ -403,34 +373,6 @@ td.c{text-align:center;}
           <div id="emptyA" class="empty hide"><i class="fas fa-calendar-times"></i><p>No dates added yet.</p></div>
         </div>
       </div>
-
-      <!-- REPORTS SECTION -->
-      <div id="section-reports" class="section fade-up">
-        <div class="panel no-print">
-          <div class="phdr">
-            <div class="ptitle"><i class="fas fa-search"></i> Find Student</div>
-          </div>
-          <div style="padding:14px 18px;display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;">
-            <div class="fg" style="flex:1;min-width:220px;">
-              <label class="lbl">Search by name or ID across all your classes</label>
-              <div style="position:relative;">
-                <i class="fas fa-search" style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--tx3);font-size:11px;"></i>
-                <input class="inp" id="reportSearch" placeholder="Type student name or ID…" oninput="app.searchStudents(this.value)" style="padding-left:30px;">
-              </div>
-            </div>
-            <button class="btn btn-ghost btn-sm no-print" onclick="app.printReport()"><i class="fas fa-print"></i> Print</button>
-            <button class="btn btn-ghost btn-sm no-print" onclick="app.exportReportCSV()"><i class="fas fa-file-csv"></i> CSV</button>
-          </div>
-          <div id="reportChips" style="padding:0 18px 14px;display:flex;gap:7px;flex-wrap:wrap;"></div>
-        </div>
-        <div id="reportCard" class="hide">
-          <div class="panel" id="reportCardInner"></div>
-        </div>
-        <div id="reportEmpty" class="empty">
-          <i class="fas fa-user-graduate"></i>
-          <p>Search for a student to see their full academic report card.</p>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -442,7 +384,7 @@ td.c{text-align:center;}
     <div class="mbody">
       <div class="msect"><div class="msect-title">Class Details</div>
         <div style="display:grid;gap:11px;">
-          <div class="fg"><label class="lbl">Class Name *</label><input class="inp" id="cm-name" placeholder="e.g. Mathematics Form 4 &amp; 5"></div>
+          <div class="fg"><label class="lbl">Class Name *</label><input class="inp" id="cm-name" placeholder="e.g. Mathematics Form 4"></div>
           <div class="g2">
             <div class="fg"><label class="lbl">Subject</label><input class="inp" id="cm-sub" placeholder="e.g. Mathematics"></div>
             <div class="fg"><label class="lbl">Year / Term</label><input class="inp" id="cm-year" placeholder="e.g. 2025 T1"></div>
@@ -480,7 +422,7 @@ td.c{text-align:center;}
 
       <div class="msect">
         <div class="msect-title" style="display:flex;align-items:center;justify-content:space-between;">
-          <span>Tests &amp; Weightings</span>
+          <span>Tests & Weightings</span>
           <button class="btn btn-ghost btn-sm" onclick="app.addTestRow()"><i class="fas fa-plus"></i> Add Test</button>
         </div>
         <div class="test-list" id="testList"></div>
@@ -494,14 +436,14 @@ td.c{text-align:center;}
 
       <div class="msect"><div class="msect-title">Grade Boundaries (%)</div>
         <div class="g3">
-          <div class="fg grade-card"><label class="lbl" style="color:#34d399;">Grade A ≥</label><div class="grade-dot" style="background:#34d399;top:calc(50% + 10px);"></div><input type="number" class="inp" id="cfg-ga" min="1" max="100" placeholder="80"></div>
-          <div class="fg grade-card"><label class="lbl" style="color:var(--blu);">Grade B ≥</label><div class="grade-dot" style="background:var(--blu);top:calc(50% + 10px);"></div><input type="number" class="inp" id="cfg-gb" min="1" max="100" placeholder="65"></div>
-          <div class="fg grade-card"><label class="lbl" style="color:var(--yel);">Grade C ≥</label><div class="grade-dot" style="background:var(--yel);top:calc(50% + 10px);"></div><input type="number" class="inp" id="cfg-gc" min="1" max="100" placeholder="50"></div>
+          <div class="fg grade-card"><label class="lbl" style="color:#34d399;">Grade A ≥</label><div class="grade-dot" style="background:#34d399;"></div><input type="number" class="inp" id="cfg-ga" min="1" max="100" placeholder="80"></div>
+          <div class="fg grade-card"><label class="lbl" style="color:var(--blu);">Grade B ≥</label><div class="grade-dot" style="background:var(--blu);"></div><input type="number" class="inp" id="cfg-gb" min="1" max="100" placeholder="65"></div>
+          <div class="fg grade-card"><label class="lbl" style="color:var(--yel);">Grade C ≥</label><div class="grade-dot" style="background:var(--yel);"></div><input type="number" class="inp" id="cfg-gc" min="1" max="100" placeholder="50"></div>
         </div>
         <p style="font-size:11px;color:var(--tx3);margin-top:7px;">Anything below C = F (Fail)</p>
       </div>
     </div>
-    <div class="mfoot"><button class="btn btn-ghost" onclick="closeModal('mSettings')">Cancel</button><button class="btn btn-primary" onclick="app.saveSettings()"><i class="fas fa-check"></i> Apply &amp; Save</button></div>
+    <div class="mfoot"><button class="btn btn-ghost" onclick="closeModal('mSettings')">Cancel</button><button class="btn btn-primary" onclick="app.saveSettings()"><i class="fas fa-check"></i> Apply & Save</button></div>
   </div>
 </div>
 
@@ -541,106 +483,68 @@ td.c{text-align:center;}
   </div>
 </div>
 
-<!-- MODAL: Admin Panel -->
-<div class="overlay" id="mAdmin">
-  <div class="modal" style="max-width:480px;">
-    <div class="mhdr">
-      <div class="mtitle"><i class="fas fa-users-cog" style="color:var(--acc);"></i> User Management</div>
-      <button class="btn btn-ghost btn-sm" onclick="closeModal('mAdmin')"><i class="fas fa-times"></i></button>
-    </div>
-    <div class="mbody" style="padding:0;">
-      <div style="padding:14px 20px;border-bottom:1px solid var(--bd);background:var(--sur2);">
-        <p style="font-size:12.5px;color:var(--tx2);line-height:1.6;">
-          <i class="fas fa-info-circle" style="color:var(--acc);margin-right:6px;"></i>
-          You can delete any teacher account. Their classes and data will be permanently removed.
-          <strong style="color:var(--yel);">This cannot be undone.</strong>
-        </p>
-      </div>
-      <div style="padding:14px 20px 6px;">
-        <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--tx3);margin-bottom:10px;">
-          Registered Teachers
-        </div>
-        <div id="adminUserList" style="display:flex;flex-direction:column;gap:7px;max-height:380px;overflow-y:auto;"></div>
-        <div id="adminEmpty" class="empty hide" style="padding:30px 0;"><i class="fas fa-users"></i><p>No teachers registered yet.</p></div>
-      </div>
-    </div>
-    <div class="mfoot">
-      <button class="btn btn-ghost" onclick="closeModal('mAdmin')">Close</button>
-      <button class="btn btn-ghost btn-sm" onclick="loadAdminPanel()" style="margin-right:auto;"><i class="fas fa-sync-alt"></i> Refresh</button>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL: Confirm Delete User -->
-<div class="overlay" id="mDelUser">
-  <div class="modal" style="max-width:380px;">
-    <div class="mhdr">
-      <div class="mtitle"><i class="fas fa-exclamation-triangle" style="color:var(--red);"></i> Delete Teacher Account</div>
-    </div>
-    <div class="mbody">
-      <p style="color:var(--tx2);font-size:14px;line-height:1.6;">
-        Permanently delete <strong id="delUserName"></strong>'s account?<br>
-        <span style="color:var(--red);font-size:12.5px;"><i class="fas fa-exclamation-triangle"></i> All their classes, students and marks will be deleted forever.</span>
-      </p>
-    </div>
-    <div class="mfoot">
-      <button class="btn btn-ghost" onclick="closeModal('mDelUser')">Cancel</button>
-      <button class="btn btn-red" id="delUserBtn"><i class="fas fa-trash-alt"></i> Delete Account</button>
-    </div>
-  </div>
-</div>
-
 <div class="toast-wrap" id="toasts"></div>
 
 <script>
 // ══════════════════════════════════════════════
-//  STORAGE CONFIGURATION - FIXED FOR ORGANIZATION USE
+//  STORAGE CONFIGURATION
 // ══════════════════════════════════════════════
 
 const CFG = {
   masterKey : '$2a$10$bEvp2mCT4Hmdn0tlG1KB0.VUDM0LOybpfXeb8yjMgW5vKAR1Hp1pa',
   accessKey : '$2a$10$ADQAOLOVixJHG2Hf.TEjWuENw3AnStsVcT.ozVEFtnplMLC18JrQC',
-  binId     : "69b9020faa77b81da9f0565e",  // ← PERMANENT BIN ID - DO NOT CHANGE
+  binId     : "69b9020faa77b81da9f0565e",
   base      : 'https://api.jsonbin.io/v3'
 };
 
-// ── Hardcoded admin account ───────────────────────────────
-const ADMIN = {
-  username : 'admin',
-  name     : 'Administrator',
-  pwHash   : '7c795a53',  // hashStr("2345")
-  isAdmin  : true
-};
-
-// Password hash
+// Password hash function
 function hashStr(s) {
-  s = String(s); var h = 5381;
-  for (var i = 0; i < s.length; i++) { h = ((h << 5) + h) + s.charCodeAt(i); h = h & 0x7fffffff; }
+  s = String(s); 
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) { 
+    h = ((h << 5) + h) + s.charCodeAt(i); 
+    h = h & 0x7fffffff; 
+  }
   return h.toString(16);
 }
 
-// ── JSONBin request with better error handling ────────────
+// ── JSONBin request with FIXED headers ─────────────────────
 async function jbFetch(method, path, body, extra) {
-  var headers = { 
-    'Content-Type': 'application/json', 
-    'X-Master-Key': CFG.masterKey, 
-    'X-Access-Key': CFG.accessKey 
-  };
-  if (extra) Object.assign(headers, extra);
+  // Make sure keys are strings and properly formatted
+  const masterKey = String(CFG.masterKey).trim();
+  const accessKey = String(CFG.accessKey).trim();
   
-  var init = { method: method, headers: headers };
-  if (body !== undefined) init.body = JSON.stringify(body);
+  const headers = { 
+    'Content-Type': 'application/json', 
+    'X-Master-Key': masterKey,
+    'X-Access-Key': accessKey
+  };
+  
+  // Add any extra headers
+  if (extra) {
+    Object.assign(headers, extra);
+  }
+  
+  const init = { 
+    method: method, 
+    headers: headers,
+    mode: 'cors'
+  };
+  
+  if (body !== undefined) {
+    init.body = JSON.stringify(body);
+  }
   
   try {
-    var res = await fetch(CFG.base + path, init);
-    var txt = await res.text();
+    const res = await fetch(CFG.base + path, init);
+    const txt = await res.text();
+    
     if (!res.ok) {
-      console.error('JSONBin error:', res.status, txt);
       throw new Error('JSONBin ' + method + ' [' + res.status + ']: ' + txt.substring(0, 100));
     }
     return JSON.parse(txt);
   } catch (e) {
-    console.error('Fetch error:', e);
+    console.error('Fetch error details:', e);
     throw e;
   }
 }
@@ -648,17 +552,16 @@ async function jbFetch(method, path, body, extra) {
 // ── Read the whole store from cloud ──────────────────────
 async function cloudRead() {
   if (!CFG.binId) {
-    throw new Error('Bin ID not configured. Please contact your administrator.');
+    throw new Error('Bin ID not configured');
   }
   try {
-    var r = await jbFetch('GET', '/b/' + CFG.binId + '/latest');
-    var data = r.record;
+    const r = await jbFetch('GET', '/b/' + CFG.binId + '/latest');
+    const data = r.record;
     if (!data.teachers) data.teachers = [];
     if (!data.classData) data.classData = {};
     return data;
   } catch (e) {
     console.error('cloudRead failed:', e);
-    // Return empty structure on error
     return { teachers: [], classData: {} };
   }
 }
@@ -666,27 +569,25 @@ async function cloudRead() {
 // ── Write the whole store to cloud ────────────────────────
 async function cloudWrite(data) {
   if (!CFG.binId) {
-    throw new Error('Bin ID not configured. Please contact your administrator.');
+    throw new Error('Bin ID not configured');
   }
   await jbFetch('PUT', '/b/' + CFG.binId, data);
 }
 
-// ── Initialize storage - FIXED: Always use the configured bin ID ──
+// ── Initialize storage ────────────────────────────────────
 async function initStorage() {
-  // We already have a bin ID configured, so just verify it exists
   if (!CFG.binId) {
-    alert('ERROR: Bin ID not configured. Please contact your administrator.');
+    alert('ERROR: Bin ID not configured');
     return false;
   }
   
-  // Test if we can access the bin
   try {
     await cloudRead();
-    console.log('Storage initialized successfully with bin:', CFG.binId);
+    console.log('Storage initialized successfully');
     return true;
   } catch (e) {
     console.error('Storage initialization failed:', e);
-    alert('Cannot connect to database. Please check your internet connection and try again.\n\nIf this persists, contact your administrator.');
+    alert('Cannot connect to database. Please check your internet connection and try again.');
     return false;
   }
 }
@@ -695,7 +596,7 @@ async function initStorage() {
 const S = {
   async teachers() {
     try {
-      var data = await cloudRead();
+      const data = await cloudRead();
       return data.teachers || [];
     } catch(e) { 
       console.error('S.teachers error', e); 
@@ -704,14 +605,14 @@ const S = {
   },
 
   async saveTeachers(list) {
-    var data = await cloudRead();
+    const data = await cloudRead();
     data.teachers = list;
     await cloudWrite(data);
   },
 
   async data(username) {
     try {
-      var data = await cloudRead();
+      const data = await cloudRead();
       return data.classData[username] || null;
     } catch(e) { 
       console.error('S.data error', e); 
@@ -720,7 +621,7 @@ const S = {
   },
 
   async saveData(username, appData) {
-    var data = await cloudRead();
+    const data = await cloudRead();
     data.classData[username] = appData;
     await cloudWrite(data);
   }
@@ -746,16 +647,16 @@ function hideLoading() {
 }
 
 function newClass(){
-  return{
-    name:'', subject:'', year:'', passMark:50, maxMark:100,
-    tests:[
-      {id:'t1', label:'Test 1', weight:25},
-      {id:'t2', label:'Test 2', weight:25},
-      {id:'t3', label:'Test 3', weight:25},
-      {id:'t4', label:'Test 4', weight:25}
+  return {
+    name: '', subject: '', year: '', passMark: 50, maxMark: 100,
+    tests: [
+      {id: 't1', label: 'Test 1', weight: 25},
+      {id: 't2', label: 'Test 2', weight: 25},
+      {id: 't3', label: 'Test 3', weight: 25},
+      {id: 't4', label: 'Test 4', weight: 25}
     ],
-    gradeBounds:{a:80, b:65, c:50},
-    students:[], attDates:[], sortOrder:'asc'
+    gradeBounds: {a: 80, b: 65, c: 50},
+    students: [], attDates: [], sortOrder: 'asc'
   };
 }
 
@@ -781,7 +682,6 @@ function lclear(id) {
   document.getElementById(id).style.display = 'none';
 }
 
-// ── AUTH (all async — talks to cloud) ──────────────────────
 async function doSignIn() {
   const u = document.getElementById('in-u').value.trim().toLowerCase();
   const p = document.getElementById('in-p').value;
@@ -794,22 +694,10 @@ async function doSignIn() {
 
   showLoading('Signing in…');
   try {
-    // Check hardcoded admin account first
-    if (u === ADMIN.username) {
-      if (hashStr(p) !== ADMIN.pwHash) {
-        hideLoading();
-        lerr('inErr', 'Incorrect admin password.');
-        return;
-      }
-      await startApp(ADMIN.username, ADMIN.name, true);
-      return;
-    }
-
-    // Regular teacher login
     const initialized = await initStorage();
     if (!initialized) {
       hideLoading();
-      lerr('inErr', 'System initialization failed. Please contact administrator.');
+      lerr('inErr', 'Cannot connect to database. Please check your internet connection.');
       return;
     }
     
@@ -828,11 +716,11 @@ async function doSignIn() {
       return;
     }
 
-    await startApp(u, teacher.name, false);
+    await startApp(u, teacher.name);
   } catch(e) {
+    console.error('Sign in error:', e);
     hideLoading();
-    lerr('inErr', 'Connection error: ' + (e.message || 'unknown') + '. Check internet.');
-    console.error(e);
+    lerr('inErr', 'Connection error: ' + (e.message || 'unknown'));
   }
 }
 
@@ -859,17 +747,13 @@ async function doRegister() {
     lerr('regErr', 'Username: letters, numbers, underscore only.'); 
     return; 
   }
-  if (u === ADMIN.username) { 
-    lerr('regErr', '"admin" is a reserved username. Please choose another.'); 
-    return; 
-  }
   
   showLoading('Creating your account…');
   try {
     const initialized = await initStorage();
     if (!initialized) {
       hideLoading();
-      lerr('regErr', 'System initialization failed. Please contact administrator.');
+      lerr('regErr', 'Cannot connect to database.');
       return;
     }
     
@@ -894,24 +778,20 @@ async function doRegister() {
     await startApp(u, n);
     toast('Welcome, ' + n + '! Account created successfully.', 'success');
   } catch(e) {
+    console.error('Register error:', e);
     hideLoading();
-    lerr('regErr', 'Connection error: ' + (e.message||'unknown') + '. Check internet.');
-    console.error(e);
+    lerr('regErr', 'Connection error: ' + (e.message||'unknown'));
   }
 }
 
-async function startApp(u, name, isAdmin = false) {
+async function startApp(u, name) {
   localStorage.setItem('cd_session_user', u);
   localStorage.setItem('cd_session_name', name);
-  localStorage.setItem('cd_session_admin', isAdmin ? '1' : '0');
 
   document.getElementById('loginPage').style.display = 'none';
   document.getElementById('appPage').style.display = 'block';
   document.getElementById('tName').textContent = name;
   document.getElementById('tAvatar').textContent = name.charAt(0).toUpperCase();
-  
-  const adminBtn = document.getElementById('adminCogBtn');
-  if (adminBtn) adminBtn.style.display = isAdmin ? '' : 'none';
 
   showLoading('Loading your classes…');
   try {
@@ -936,9 +816,9 @@ async function startApp(u, name, isAdmin = false) {
     document.getElementById('attDate').value = new Date().toISOString().split('T')[0];
     hideLoading();
   } catch(e) {
+    console.error('Start app error:', e);
     hideLoading();
     toast('Could not load class data. Check your connection.', 'error');
-    console.error(e);
   }
 }
 
@@ -947,7 +827,6 @@ function doLogout() {
   app.D = null;
   localStorage.removeItem('cd_session_user');
   localStorage.removeItem('cd_session_name');
-  localStorage.removeItem('cd_session_admin');
 
   document.getElementById('appPage').style.display = 'none';
   document.getElementById('loginPage').style.display = 'flex';
@@ -957,19 +836,12 @@ function doLogout() {
 }
 
 async function checkSession() {
-  const u       = localStorage.getItem('cd_session_user');
-  const name    = localStorage.getItem('cd_session_name');
-  const isAdmin = localStorage.getItem('cd_session_admin') === '1';
+  const u = localStorage.getItem('cd_session_user');
+  const name = localStorage.getItem('cd_session_name');
   
   if (u && name) {
     showLoading('Restoring your session…');
     try {
-      if (u === ADMIN.username && isAdmin) {
-        CU = u;
-        await startApp(u, name, true);
-        return true;
-      }
-      
       const initialized = await initStorage();
       if (!initialized) {
         hideLoading();
@@ -979,7 +851,7 @@ async function checkSession() {
       const teachers = await S.teachers();
       if (teachers.find(t => t.username === u)) {
         CU = u;
-        await startApp(u, name, false);
+        await startApp(u, name);
         return true;
       }
     } catch(e) {
@@ -988,30 +860,34 @@ async function checkSession() {
     hideLoading();
     localStorage.removeItem('cd_session_user');
     localStorage.removeItem('cd_session_name');
-    localStorage.removeItem('cd_session_admin');
   }
   return false;
 }
 
-function debugAuth() {
+function debugAuth(){
+  showLoading('Checking accounts...');
   S.teachers().then(ts => {
-    if (!ts.length) {
+    hideLoading();
+    if (!ts || ts.length === 0) {
       alert('No accounts found.\n\nPlease Register to create an account.');
     } else {
       alert('Accounts in cloud (' + ts.length + '):\n\n' +
         ts.map(t => '• ' + t.name + ' (username: ' + t.username + ')').join('\n'));
     }
-  }).catch(e => alert('Connection error: ' + e.message + '\n\nMake sure the Netlify environment variables are set.'));
+  }).catch(e => {
+    hideLoading();
+    alert('Connection error: ' + e.message);
+  });
 }
 
 // ══════════════════════════════════════════════
-//  APP (rest of the app remains the same)
+//  APP
 // ══════════════════════════════════════════════
-const app={
-  D:null,
-  editSId:null,
-  editCId:null,
-  get C(){return this.D&&this.D.curId?this.D.classes[this.D.curId]:null;},
+const app = {
+  D: null,
+  editSId: null,
+  editCId: null,
+  get C() { return this.D && this.D.curId ? this.D.classes[this.D.curId] : null; },
 
   async load(userData) {
     if (!userData) userData = { classes: {}, curId: null };
@@ -1025,8 +901,8 @@ const app={
     }
   },
   
-  async save(){
-    if(!CU) return;
+  async save() {
+    if (!CU) return;
     try {
       await S.saveData(CU, this.D);
     } catch(e) {
@@ -1035,28 +911,24 @@ const app={
     }
   },
   
-  async saveAll(){
+  async saveAll() {
     showLoading('Saving…');
     await this.save();
     hideLoading();
-    toast('Saved to cloud!','success');
+    toast('Saved to cloud!', 'success');
   },
 
-  showEmpty(){
+  showEmpty() {
     document.getElementById('noClass').classList.remove('hide');
     document.getElementById('clsContent').classList.add('hide');
-    document.getElementById('cswName').textContent = CU === ADMIN.username ? 'Admin Dashboard' : 'Select a class';
-    if (CU === ADMIN.username) {
-      document.querySelector('#noClass h2').textContent = 'Admin Dashboard';
-      document.querySelector('#noClass p').textContent = 'Use the Users icon (⚙) to manage teacher accounts and profiles.';
-    }
+    document.getElementById('cswName').textContent = 'Select a class';
   },
 
-  selectClass(id, save=true){
+  selectClass(id, save = true) {
     const c = this.D.classes[id]; 
-    if(!c) return;
+    if (!c) return;
     this.D.curId = id;
-    if(save) this.save();
+    if (save) this.save();
     document.getElementById('cswName').textContent = c.name || 'Unnamed Class';
     document.getElementById('noClass').classList.add('hide');
     document.getElementById('clsContent').classList.remove('hide');
@@ -1076,11 +948,11 @@ const app={
     this.updateStats();
   },
 
-  saveClass(){
+  saveClass() {
     const name = document.getElementById('cm-name').value.trim();
-    if(!name){ toast('Class name is required.','error'); return; }
+    if (!name) { toast('Class name is required.', 'error'); return; }
     
-    if(this.editCId){
+    if (this.editCId) {
       const c = this.D.classes[this.editCId];
       c.name = name; 
       c.subject = document.getElementById('cm-sub').value.trim();
@@ -1088,12 +960,12 @@ const app={
       c.passMark = parseInt(document.getElementById('cm-pass').value) || 50;
       c.maxMark = parseInt(document.getElementById('cm-max').value) || 100;
       
-      if(this.D.curId === this.editCId){
+      if (this.D.curId === this.editCId) {
         document.getElementById('cswName').textContent = name;
         document.getElementById('s-thresh').textContent = c.passMark;
         document.getElementById('printTitle').textContent = name;
       }
-      toast(`"${name}" updated.`,'success');
+      toast(`"${name}" updated.`, 'success');
     } else {
       const id = 'cls_' + Date.now();
       const nc = newClass();
@@ -1107,7 +979,7 @@ const app={
       this.refreshCsw(); 
       closeModal('mClass'); 
       this.selectClass(id);
-      toast(`Class "${name}" created!`,'success'); 
+      toast(`Class "${name}" created!`, 'success'); 
       return;
     }
     this.save(); 
@@ -1115,26 +987,29 @@ const app={
     closeModal('mClass');
   },
 
-  confirmDeleteClass(id){
+  confirmDeleteClass(id) {
     const c = this.D.classes[id]; 
-    if(!c) return;
+    if (!c) return;
     document.getElementById('delCName').textContent = c.name;
     document.getElementById('delCBtn').onclick = () => {
       delete this.D.classes[id];
-      if(this.D.curId === id){ this.D.curId = null; this.showEmpty(); }
+      if (this.D.curId === id) { 
+        this.D.curId = null; 
+        this.showEmpty(); 
+      }
       this.save(); 
       this.refreshCsw(); 
       closeModal('mDelC');
-      toast('Class deleted.','info');
+      toast('Class deleted.', 'info');
     };
     openModal('mDelC');
   },
 
-  refreshCsw(){
+  refreshCsw() {
     const list = document.getElementById('cswList'); 
     list.innerHTML = '';
     const ids = Object.keys(this.D.classes || {});
-    if(!ids.length){ 
+    if (!ids.length) { 
       list.innerHTML = '<div style="padding:10px 14px;font-size:12px;color:var(--tx3);">No classes yet.</div>';
       return;
     }
@@ -1157,9 +1032,9 @@ const app={
     });
   },
 
-  openSettings(){
+  openSettings() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     document.getElementById('cfg-name').value = c.name || '';
     document.getElementById('cfg-sub').value = c.subject || '';
     document.getElementById('cfg-year').value = c.year || '';
@@ -1172,9 +1047,9 @@ const app={
     openModal('mSettings');
   },
 
-  renderTestList(){
+  renderTestList() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const list = document.getElementById('testList'); 
     list.innerHTML = '';
     c.tests.forEach((t, i) => {
@@ -1204,20 +1079,20 @@ const app={
     this.updateWt();
   },
 
-  updateWt(){
+  updateWt() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const total = c.tests.reduce((s, t) => s + (Number(t.weight) || 0), 0);
     const pct = Math.min(100, total);
     document.getElementById('wtVal').textContent = total + '%';
     const fill = document.getElementById('wtFill');
     fill.style.width = pct + '%';
     const msg = document.getElementById('wtMsg');
-    if(Math.abs(total - 100) < 0.01){
+    if (Math.abs(total - 100) < 0.01) {
       fill.style.background = 'var(--acc)';
       msg.style.color = 'var(--acc)';
       msg.innerHTML = '<i class="fas fa-check-circle"></i> Weights add up to 100% — perfect!';
-    } else if(total > 100){
+    } else if (total > 100) {
       fill.style.background = 'var(--red)';
       msg.style.color = 'var(--red)';
       msg.innerHTML = `<i class="fas fa-exclamation-circle"></i> Over by ${(total-100).toFixed(1)}%. Reduce some weights.`;
@@ -1228,26 +1103,26 @@ const app={
     }
   },
 
-  addTestRow(){
+  addTestRow() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     c.tests.push({ id: 't' + Date.now(), label: `Test ${c.tests.length + 1}`, weight: 0 });
     this.renderTestList();
   },
 
-  removeTest(id){
+  removeTest(id) {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     c.tests = c.tests.filter(t => t.id !== id);
-    c.students.forEach(s => { if(s.marks) delete s.marks[id]; });
+    c.students.forEach(s => { if (s.marks) delete s.marks[id]; });
     this.renderTestList();
   },
 
-  saveSettings(){
+  saveSettings() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const total = c.tests.reduce((s, t) => s + (Number(t.weight) || 0), 0);
-    if(Math.abs(total - 100) > 0.01){ 
+    if (Math.abs(total - 100) > 0.01) { 
       toast(`Weights must add up to 100% (currently ${total}%).`, 'error'); 
       return; 
     }
@@ -1256,7 +1131,7 @@ const app={
     const gb = parseInt(document.getElementById('cfg-gb').value) || 65;
     const gc = parseInt(document.getElementById('cfg-gc').value) || 50;
     
-    if(ga <= gb || gb <= gc){ 
+    if (ga <= gb || gb <= gc) { 
       toast('Grade boundaries must be: A > B > C.', 'error'); 
       return; 
     }
@@ -1280,15 +1155,15 @@ const app={
     toast('Settings saved!', 'success');
   },
 
-  saveStudent(){
+  saveStudent() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const name = document.getElementById('sm-name').value.trim();
-    if(!name){ toast('Name is required.', 'error'); return; }
+    if (!name) { toast('Name is required.', 'error'); return; }
     
-    if(this.editSId !== null){
+    if (this.editSId !== null) {
       const s = c.students.find(x => x.id === this.editSId);
-      if(s){
+      if (s) {
         s.name = name;
         s.number = document.getElementById('sm-id').value.trim();
         s.group = document.getElementById('sm-grp').value.trim();
@@ -1315,11 +1190,11 @@ const app={
     this.save();
   },
 
-  editStudent(id){
+  editStudent(id) {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const s = c.students.find(x => x.id === id); 
-    if(!s) return;
+    if (!s) return;
     
     this.editSId = id;
     document.getElementById('smTitle').innerHTML = '<i class="fas fa-user-edit" style="color:var(--acc);"></i>Edit Student';
@@ -1331,11 +1206,11 @@ const app={
     openModal('mStudent');
   },
 
-  confirmDelete(id){
+  confirmDelete(id) {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const s = c.students.find(x => x.id === id); 
-    if(!s) return;
+    if (!s) return;
     
     document.getElementById('delSName').textContent = s.name;
     document.getElementById('delSBtn').onclick = () => {
@@ -1350,32 +1225,32 @@ const app={
     openModal('mDelS');
   },
 
-  updateMark(sid, tid, val){
+  updateMark(sid, tid, val) {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const s = c.students.find(x => x.id === sid); 
-    if(!s) return;
+    if (!s) return;
     
     const num = val === '' ? null : parseFloat(val);
-    if(val !== '' && (isNaN(num) || num < 0 || num > c.maxMark)){ 
+    if (val !== '' && (isNaN(num) || num < 0 || num > c.maxMark)) { 
       toast(`Mark must be 0–${c.maxMark}.`, 'error'); 
       return; 
     }
     
-    if(!s.marks) s.marks = {};
+    if (!s.marks) s.marks = {};
     s.marks[tid] = num;
     this.refreshRow(sid); 
     this.updateStats(); 
     this.save();
   },
 
-  calcAvg(marks){
+  calcAvg(marks) {
     const c = this.C; 
-    if(!c) return null;
+    if (!c) return null;
     let sum = 0, wsum = 0;
     c.tests.forEach(t => {
       const m = marks ? marks[t.id] : null;
-      if(m !== null && m !== undefined){
+      if (m !== null && m !== undefined) {
         sum += (m / c.maxMark) * 100 * (t.weight / 100);
         wsum += t.weight;
       }
@@ -1383,30 +1258,30 @@ const app={
     return wsum ? ((sum / wsum) * 100) : null;
   },
 
-  getGrade(pct){
+  getGrade(pct) {
     const gb = (this.C && this.C.gradeBounds) || { a: 80, b: 65, c: 50 };
-    if(pct === null || pct === undefined) return { l: '—', cl: 'g-na' };
-    if(pct >= gb.a) return { l: 'A', cl: 'g-a' };
-    if(pct >= gb.b) return { l: 'B', cl: 'g-b' };
-    if(pct >= gb.c) return { l: 'C', cl: 'g-c' };
+    if (pct === null || pct === undefined) return { l: '—', cl: 'g-na' };
+    if (pct >= gb.a) return { l: 'A', cl: 'g-a' };
+    if (pct >= gb.b) return { l: 'B', cl: 'g-b' };
+    if (pct >= gb.c) return { l: 'C', cl: 'g-c' };
     return { l: 'F', cl: 'g-f' };
   },
 
-  col(pct){
+  col(pct) {
     const c = this.C; 
     const pm = (c && c.passMark) || 50; 
     const gb = (c && c.gradeBounds) || { a: 80, b: 65, c: 50 };
-    if(pct === null) return 'var(--tx3)';
-    if(pct >= gb.b) return 'var(--acc)';
-    if(pct >= pm) return 'var(--yel)';
+    if (pct === null) return 'var(--tx3)';
+    if (pct >= gb.b) return 'var(--acc)';
+    if (pct >= pm) return 'var(--yel)';
     return 'var(--red)';
   },
 
-  refreshRow(sid){
+  refreshRow(sid) {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const s = c.students.find(x => x.id === sid); 
-    if(!s) return;
+    if (!s) return;
     
     const avg = this.calcAvg(s.marks); 
     const g = this.getGrade(avg); 
@@ -1416,43 +1291,43 @@ const app={
     const pe = document.getElementById('prg-' + sid); 
     const re = document.getElementById('row-' + sid);
     
-    if(ae){ 
+    if (ae) { 
       ae.textContent = avg !== null ? avg.toFixed(1) + '%' : '—'; 
       ae.style.color = color; 
     }
-    if(ge) ge.innerHTML = `<span class="grade ${g.cl}">${g.l}</span>`;
-    if(pe) pe.innerHTML = avg !== null ? `<div class="pbar"><div class="pfill" style="width:${Math.min(100, avg)}%;background:${color}"></div></div>` : '<span style="color:var(--tx3);font-size:11px;">—</span>';
-    if(re){ 
+    if (ge) ge.innerHTML = `<span class="grade ${g.cl}">${g.l}</span>`;
+    if (pe) pe.innerHTML = avg !== null ? `<div class="pbar"><div class="pfill" style="width:${Math.min(100, avg)}%;background:${color}"></div></div>` : '<span style="color:var(--tx3);font-size:11px;">—</span>';
+    if (re) { 
       re.classList.add('rpulse');
       re.addEventListener('animationend', () => re.classList.remove('rpulse'), { once: true });
     }
   },
 
-  sortStudents(){
+  sortStudents() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     c.students.sort((a, b) => {
       const r = a.name.toLowerCase().localeCompare(b.name.toLowerCase());
       return c.sortOrder === 'asc' ? r : -r;
     });
   },
 
-  toggleSort(){
+  toggleSort() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     c.sortOrder = c.sortOrder === 'asc' ? 'desc' : 'asc';
     document.getElementById('sortBtn').innerHTML = c.sortOrder === 'asc' ? '<i class="fas fa-sort-alpha-down"></i> A–Z' : '<i class="fas fa-sort-alpha-up"></i> Z–A';
     this.sortStudents(); 
     this.render();
   },
 
-  render(filter = ''){
+  render(filter = '') {
     const c = this.C; 
     const tbody = document.getElementById('tBody'); 
     const thead = document.getElementById('tHead');
     tbody.innerHTML = '';
     
-    if(!c){ 
+    if (!c) { 
       thead.innerHTML = ''; 
       document.getElementById('emptyG').classList.remove('hide');
       return; 
@@ -1485,14 +1360,14 @@ const app={
     });
   },
 
-  addAttDate(){
+  addAttDate() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const date = document.getElementById('attDate').value;
     const label = document.getElementById('attLabel').value.trim() || date;
-    if(!date){ toast('Select a date.', 'error'); return; }
-    if(!c.attDates) c.attDates = [];
-    if(c.attDates.find(x => x.date === date)){ toast('Date already added.', 'error'); return; }
+    if (!date) { toast('Select a date.', 'error'); return; }
+    if (!c.attDates) c.attDates = [];
+    if (c.attDates.find(x => x.date === date)) { toast('Date already added.', 'error'); return; }
     c.attDates.push({ id: date, date, label });
     c.attDates.sort((a, b) => a.date.localeCompare(b.date));
     document.getElementById('attLabel').value = '';
@@ -1502,31 +1377,31 @@ const app={
     toast(`"${label}" added.`, 'success');
   },
 
-  removeAttDate(id){
+  removeAttDate(id) {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     c.attDates = (c.attDates || []).filter(x => x.id !== id);
-    c.students.forEach(s => { if(s.att) delete s.att[id]; });
+    c.students.forEach(s => { if (s.att) delete s.att[id]; });
     this.renderAtt(); 
     this.updateStats(); 
     this.save(); 
     toast('Date removed.', 'info');
   },
 
-  cycleAtt(sid, did){
+  cycleAtt(sid, did) {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const s = c.students.find(x => x.id === sid); 
-    if(!s) return;
-    if(!s.att) s.att = {};
+    if (!s) return;
+    if (!s.att) s.att = {};
     
     const cur = s.att[did] || 'none';
     const next = cur === 'none' ? 'present' : cur === 'present' ? 'absent' : cur === 'absent' ? 'late' : 'none';
-    if(next === 'none') delete s.att[did]; 
+    if (next === 'none') delete s.att[did]; 
     else s.att[did] = next;
     
     const dot = document.getElementById(`ad-${sid}-${did}`);
-    if(dot){
+    if (dot) {
       dot.className = `att-dot${next !== 'none' ? ' ' + next : ''}`;
       dot.innerHTML = next === 'present' ? '<i class="fas fa-check"></i>' : next === 'absent' ? '<i class="fas fa-times"></i>' : next === 'late' ? '<i class="fas fa-clock"></i>' : '';
     }
@@ -1535,11 +1410,11 @@ const app={
     this.save();
   },
 
-  refreshAttRow(sid){
+  refreshAttRow(sid) {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const s = c.students.find(x => x.id === sid); 
-    if(!s) return;
+    if (!s) return;
     
     const total = (c.attDates || []).length;
     const present = Object.values(s.att || {}).filter(v => v === 'present' || v === 'late').length;
@@ -1547,33 +1422,33 @@ const app={
     const pe = document.getElementById('atp-' + sid); 
     const re = document.getElementById('atr-' + sid);
     
-    if(pe) pe.textContent = `${present} / ${total}`;
-    if(re){ 
+    if (pe) pe.textContent = `${present} / ${total}`;
+    if (re) { 
       re.textContent = rate !== null ? rate + '%' : '—'; 
       re.style.color = rate === null ? 'var(--tx3)' : rate >= 75 ? 'var(--acc)' : rate >= 50 ? 'var(--yel)' : 'var(--red)'; 
     }
   },
 
-  markAllPresent(){
+  markAllPresent() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     const today = new Date().toISOString().split('T')[0];
     const d = (c.attDates || []).find(x => x.date === today);
-    if(!d){ toast("Add today's date to the register first.", 'error'); return; }
-    c.students.forEach(s => { if(!s.att) s.att = {}; s.att[d.id] = 'present'; });
+    if (!d) { toast("Add today's date to the register first.", 'error'); return; }
+    c.students.forEach(s => { if (!s.att) s.att = {}; s.att[d.id] = 'present'; });
     this.renderAtt(); 
     this.updateStats(); 
     this.save();
     toast("All marked present for today.", 'success');
   },
 
-  renderAtt(){
+  renderAtt() {
     const c = this.C; 
     const tbody = document.getElementById('aBody'); 
     const thead = document.getElementById('aHead');
     tbody.innerHTML = '';
     
-    if(!c){ 
+    if (!c) { 
       thead.innerHTML = ''; 
       document.getElementById('emptyA').classList.remove('hide');
       return; 
@@ -1608,9 +1483,9 @@ const app={
     });
   },
 
-  updateStats(){
+  updateStats() {
     const c = this.C;
-    if(!c){
+    if (!c) {
       ['s-total', 's-avg', 's-pass', 's-fail', 's-att'].forEach(id => document.getElementById(id).textContent = '—');
       document.getElementById('s-fail').textContent = '0';
       return;
@@ -1620,7 +1495,7 @@ const app={
     let sum = 0, cnt = 0, pass = 0, fail = 0;
     c.students.forEach(s => {
       const avg = this.calcAvg(s.marks);
-      if(avg !== null){ 
+      if (avg !== null) { 
         sum += avg; 
         cnt++; 
         avg >= (c.passMark || 50) ? pass++ : fail++; 
@@ -1633,7 +1508,7 @@ const app={
     
     const nd = (c.attDates || []).length; 
     const n = c.students.length;
-    if(nd && n){
+    if (nd && n) {
       let tp = 0;
       c.students.forEach(s => { tp += Object.values(s.att || {}).filter(v => v === 'present' || v === 'late').length; });
       document.getElementById('s-att').textContent = Math.round((tp / (n * nd)) * 100) + '%';
@@ -1642,230 +1517,21 @@ const app={
     }
   },
 
-  updateDate(){
+  updateDate() {
     const now = new Date();
     document.getElementById('s-date').textContent = now.toLocaleDateString('en-ZA', { year: 'numeric', month: 'short', day: 'numeric' });
     document.getElementById('s-day').textContent = now.toLocaleDateString('en-ZA', { weekday: 'long' });
     document.getElementById('printDate').textContent = 'Printed: ' + now.toLocaleDateString('en-ZA', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   },
 
-  searchStudents(query) {
-    const chips = document.getElementById('reportChips');
-    chips.innerHTML = '';
-    document.getElementById('reportCard').classList.add('hide');
-    document.getElementById('reportEmpty').style.display = '';
-
-    if (!query || query.trim().length < 2) return;
-    const q = query.trim().toLowerCase();
-
-    const found = [];
-    const seen  = new Set();
-    Object.values(this.D.classes || {}).forEach(cls => {
-      (cls.students || []).forEach(s => {
-        const key = (s.name + '|' + (s.number || '')).toLowerCase();
-        if ((s.name.toLowerCase().includes(q) || (s.number || '').toLowerCase().includes(q)) && !seen.has(key)) {
-          seen.add(key);
-          found.push({ name: s.name, number: s.number || '', group: s.group || '' });
-        }
-      });
-    });
-
-    if (!found.length) {
-      chips.innerHTML = '<span style="font-size:12.5px;color:var(--tx3);">No students found matching "' + esc(query) + '"</span>';
-      return;
-    }
-
-    found.forEach(s => {
-      const chip = document.createElement('div');
-      chip.className = 'search-chip';
-      chip.innerHTML = '<i class="fas fa-user" style="font-size:10px;color:var(--acc);"></i>' + esc(s.name) + (s.number ? ' <span style="color:var(--tx3);font-size:10.5px;">· ' + esc(s.number) + '</span>' : '');
-      chip.onclick = () => {
-        document.querySelectorAll('.search-chip').forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        this.showReport(s.name, s.number);
-      };
-      chips.appendChild(chip);
-    });
-
-    if (found.length === 1) {
-      chips.querySelector('.search-chip').click();
-    }
-  },
-
-  showReport(name, number) {
-    document.getElementById('reportEmpty').style.display = 'none';
-    document.getElementById('reportCard').classList.remove('hide');
-    const card = document.getElementById('reportCardInner');
-
-    const subjects = [];
-    Object.values(this.D.classes || {}).forEach(cls => {
-      const s = (cls.students || []).find(x =>
-        x.name.toLowerCase() === name.toLowerCase() &&
-        (!number || (x.number || '').toLowerCase() === (number || '').toLowerCase())
-      );
-      if (!s) return;
-      const avg = this.calcAvgForClass(s.marks, cls);
-      subjects.push({ cls, s, avg });
-    });
-
-    if (!subjects.length) {
-      card.innerHTML = '<div class="empty"><i class="fas fa-exclamation-circle"></i><p>No data found for this student.</p></div>';
-      return;
-    }
-
-    const withMarks   = subjects.filter(x => x.avg !== null);
-    const overallAvg  = withMarks.length ? withMarks.reduce((a, b) => a + b.avg, 0) / withMarks.length : null;
-    const passCount   = withMarks.filter(x => x.avg >= (x.cls.passMark || 50)).length;
-    const failCount   = withMarks.filter(x => x.avg < (x.cls.passMark || 50)).length;
-    const highestSubj = withMarks.length ? withMarks.reduce((a, b) => a.avg > b.avg ? a : b) : null;
-    const lowestSubj  = withMarks.length > 1 ? withMarks.reduce((a, b) => a.avg < b.avg ? a : b) : null;
-    const overallGrade = this.getGradeFromPct(overallAvg, subjects[0] && subjects[0].cls);
-    const initials = name.split(' ').map(function(n){ return n[0]; }).join('').toUpperCase().slice(0,2);
-    const firstS = subjects[0].s;
-
-    var subjectRowsHtml = '';
-    subjects.forEach(function(item) {
-      var cls = item.cls, s = item.s, avg = item.avg;
-      var gb  = cls.gradeBounds || { a: 80, b: 65, c: 50 };
-      var pm  = cls.passMark || 50;
-      var col = avg === null ? 'var(--tx3)' : avg >= gb.b ? 'var(--acc)' : avg >= pm ? 'var(--yel)' : 'var(--red)';
-      var g   = app.getGradeFromPct(avg, cls);
-      var pass = avg !== null ? (avg >= pm) : null;
-
-      var pills = '';
-      (cls.tests || []).forEach(function(t) {
-        var v = s.marks ? s.marks[t.id] : null;
-        var pct = (v !== null && v !== undefined) ? ((v / (cls.maxMark || 100)) * 100) : null;
-        var pillCls = pct === null ? 'na' : pct >= gb.b ? 'good' : pct >= pm ? 'warn' : 'bad';
-        pills += '<span class="test-pill ' + pillCls + '" title="' + esc(t.label) + ': ' + (v !== null && v !== undefined ? v + '/' + cls.maxMark : 'N/A') + '">' + esc(t.label.replace('Test ', 'T')) + ': ' + (v !== null && v !== undefined ? v : '—') + '</span>';
-      });
-
-      var statusHtml = pass === null ? '—' : pass
-        ? '<i class="fas fa-check-circle"></i> Pass'
-        : '<i class="fas fa-times-circle"></i> Fail';
-      var statusColor = pass === null ? 'var(--tx3)' : pass ? 'var(--acc)' : 'var(--red)';
-
-      subjectRowsHtml +=
-        '<div class="subject-row">' +
-          '<div><div class="subject-name">' + esc(cls.subject || cls.name) + '</div>' +
-          '<div class="subject-class">' + esc(cls.name) + (cls.year ? ' · ' + esc(cls.year) : '') + '</div></div>' +
-          '<div class="test-pills">' + pills + '</div>' +
-          '<div class="subject-avg" style="color:' + col + '">' + (avg !== null ? avg.toFixed(1) + '%' : '—') + '</div>' +
-          '<div class="subject-grade"><span class="grade ' + g.cl + '">' + g.l + '</span></div>' +
-          '<div style="text-align:right;font-size:11.5px;font-weight:600;color:' + statusColor + '">' + statusHtml + '</div>' +
-        '</div>';
-    });
-
-    var avgColor = overallAvg === null ? 'var(--tx2)' : overallAvg >= (subjects[0].cls.gradeBounds && subjects[0].cls.gradeBounds.b || 65) ? 'var(--acc)' : overallAvg >= (subjects[0].cls.passMark || 50) ? 'var(--yel)' : 'var(--red)';
-    var summaryHtml =
-      '<div class="summ-card"><div class="summ-val" style="color:' + avgColor + '">' + (overallAvg !== null ? overallAvg.toFixed(1) + '%' : '—') + '</div><div class="summ-lbl">Overall Average</div></div>' +
-      '<div class="summ-card"><div class="summ-val" style="color:var(--acc)">' + passCount + '</div><div class="summ-lbl">Subjects Passed</div></div>' +
-      '<div class="summ-card"><div class="summ-val" style="color:' + (failCount > 0 ? 'var(--red)' : 'var(--tx2)') + '">' + failCount + '</div><div class="summ-lbl">Subjects Failed</div></div>' +
-      '<div class="summ-card"><div class="summ-val" style="color:var(--acc)">' + withMarks.length + '</div><div class="summ-lbl">Subjects Assessed</div></div>' +
-      (highestSubj ? '<div class="summ-card"><div class="summ-val" style="font-size:13px;color:var(--acc)">' + esc(highestSubj.cls.subject || highestSubj.cls.name) + '</div><div class="summ-lbl">Best Subject (' + highestSubj.avg.toFixed(1) + '%)</div></div>' : '') +
-      (lowestSubj ? '<div class="summ-card"><div class="summ-val" style="font-size:13px;color:var(--red)">' + esc(lowestSubj.cls.subject || lowestSubj.cls.name) + '</div><div class="summ-lbl">Needs Attention (' + lowestSubj.avg.toFixed(1) + '%)</div></div>' : '') +
-      '<div class="summ-card" style="grid-column:span 2;"><div style="text-align:center;margin-bottom:5px;"><span class="grade ' + overallGrade.cl + '" style="font-size:18px;padding:4px 14px;">' + overallGrade.l + '</span></div><div class="summ-lbl">End of Term Grade</div></div>';
-
-    var promoHtml = failCount === 0 && withMarks.length > 0
-      ? '<i class="fas fa-check-circle" style="color:var(--acc);font-size:18px;"></i><div><div style="font-weight:600;font-size:13px;color:var(--acc);">Recommended for Promotion</div><div style="font-size:11.5px;color:var(--tx2);margin-top:2px;">Student has passed all assessed subjects this term.</div></div>'
-      : failCount > 0
-      ? '<i class="fas fa-exclamation-triangle" style="color:var(--yel);font-size:18px;"></i><div><div style="font-weight:600;font-size:13px;color:var(--yel);">Promotion Conditional</div><div style="font-size:11.5px;color:var(--tx2);margin-top:2px;">Student has ' + failCount + ' failed subject' + (failCount > 1 ? 's' : '') + ' requiring attention.</div></div>'
-      : '<i class="fas fa-info-circle" style="color:var(--tx3);font-size:18px;"></i><div><div style="font-weight:600;font-size:13px;color:var(--tx2);">Insufficient Data</div><div style="font-size:11.5px;color:var(--tx3);margin-top:2px;">No marks recorded yet.</div></div>';
-
-    card.innerHTML =
-      '<div class="report-header">' +
-        '<div class="report-avatar">' + esc(initials) + '</div>' +
-        '<div class="report-meta">' +
-          '<div class="report-name">' + esc(name) + '</div>' +
-          '<div class="report-sub">' + (firstS.number ? 'ID: ' + esc(firstS.number) + ' &nbsp;·&nbsp; ' : '') + (firstS.group ? esc(firstS.group) + ' &nbsp;·&nbsp; ' : '') + subjects.length + ' subject' + (subjects.length !== 1 ? 's' : '') + ' enrolled</div>' +
-        '</div>' +
-        '<div class="report-term-badge"><i class="fas fa-calendar-alt" style="margin-right:5px;"></i>End of Term Report</div>' +
-      '</div>' +
-      '<div style="padding:6px 0;">' +
-        '<div style="display:grid;grid-template-columns:180px 1fr auto auto auto;gap:12px;padding:7px 22px;border-bottom:1px solid var(--bd);">' +
-          '<span style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--tx3);">Subject</span>' +
-          '<span style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--tx3);">Tests</span>' +
-          '<span style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--tx3);text-align:right;">Avg</span>' +
-          '<span style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--tx3);text-align:right;">Grade</span>' +
-          '<span style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--tx3);text-align:right;">Status</span>' +
-        '</div>' +
-        subjectRowsHtml +
-      '</div>' +
-      '<div class="report-summary">' + summaryHtml + '</div>' +
-      '<div style="padding:14px 22px;border-top:1px solid var(--bd);display:flex;align-items:center;gap:12px;">' +
-        promoHtml +
-        '<div style="margin-left:auto;font-size:11px;color:var(--tx3);">Generated: ' + new Date().toLocaleDateString('en-ZA', { year: 'numeric', month: 'long', day: 'numeric' }) + '</div>' +
-      '</div>';
-
-    this._currentReport = { name, number, subjects, overallAvg, passCount, failCount };
-  },
-
-  calcAvgForClass(marks, cls) {
-    if (!marks || !cls.tests) return null;
-    let sum = 0, wsum = 0;
-    cls.tests.forEach(t => {
-      const m = marks[t.id];
-      if (m !== null && m !== undefined) {
-        sum += (m / (cls.maxMark || 100)) * 100 * (t.weight / 100);
-        wsum += t.weight;
-      }
-    });
-    return wsum ? (sum / wsum) * 100 : null;
-  },
-
-  getGradeFromPct(pct, cls) {
-    const gb = (cls && cls.gradeBounds) || { a: 80, b: 65, c: 50 };
-    if (pct === null || pct === undefined) return { l: '—', cl: 'g-na' };
-    if (pct >= gb.a) return { l: 'A', cl: 'g-a' };
-    if (pct >= gb.b) return { l: 'B', cl: 'g-b' };
-    if (pct >= gb.c) return { l: 'C', cl: 'g-c' };
-    return { l: 'F', cl: 'g-f' };
-  },
-
-  printReport() {
-    if (!this._currentReport) { toast('Search for a student first.', 'error'); return; }
-    window.print();
-  },
-
-  exportReportCSV() {
-    const r = this._currentReport;
-    if (!r) { toast('Search for a student first.', 'error'); return; }
-    let csv = 'Student,' + esc(r.name) + '\n';
-    csv += 'ID,' + (r.number || '') + '\n';
-    csv += 'Generated,' + new Date().toLocaleDateString('en-ZA') + '\n\n';
-    csv += 'Subject,Class,';
-    var maxTests = Math.max.apply(null, r.subjects.map(function(x){ return (x.cls.tests || []).length; }));
-    for(var ci = 1; ci <= maxTests; ci++) csv += 'Test ' + ci + ',';
-    csv += 'Weighted Avg (%),Grade,Status\n';
-    r.subjects.forEach(function(item) {
-      var cls = item.cls, s = item.s, avg = item.avg;
-      var g = app.getGradeFromPct(avg, cls);
-      var pm = cls.passMark || 50;
-      var marks = (cls.tests || []).map(function(t) {
-        var v = s.marks ? s.marks[t.id] : null;
-        return v !== null && v !== undefined ? v : '';
-      });
-      while(marks.length < maxTests) marks.push('');
-      csv += '"' + (cls.subject || cls.name) + '","' + cls.name + '",' + marks.join(',') + ',' + (avg !== null ? avg.toFixed(1) : '') + ',' + g.l + ',' + (avg === null ? '' : avg >= pm ? 'Pass' : 'Fail') + '\n';
-    });
-    csv += '\nOverall Average,' + (r.overallAvg !== null ? r.overallAvg.toFixed(1) + '%' : '—') + '\n';
-    csv += 'Subjects Passed,' + r.passCount + '\n';
-    csv += 'Subjects Failed,' + r.failCount + '\n';
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
-    a.download = (r.name.replace(/\s+/g, '_')) + '_report_' + new Date().toISOString().split('T')[0] + '.csv';
-    a.click();
-    toast('Report exported.', 'success');
-  },
-
-  doPrint(){ 
+  doPrint() { 
     document.getElementById('printDate').textContent = 'Printed: ' + new Date().toLocaleDateString('en-ZA', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
     window.print(); 
   },
 
-  exportCSV(){
+  exportCSV() {
     const c = this.C; 
-    if(!c) return;
+    if (!c) return;
     let csv = '#,Name,ID,Group,';
     c.tests.forEach(t => { csv += `${t.label} (/${c.maxMark} · ${t.weight}%),`; });
     csv += 'Weighted Avg (%),Grade,Notes\n';
@@ -1884,19 +1550,19 @@ const app={
 };
 
 // HELPERS
-function esc(s){ return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+function esc(s) { return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 
-function switchTab(tab, btn){
+function switchTab(tab, btn) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.tbtn').forEach(b => b.classList.remove('active'));
   document.getElementById('section-' + tab).classList.add('active'); 
   btn.classList.add('active');
 }
 
-function openModal(id){ document.getElementById(id).classList.add('open'); }
-function closeModal(id){ document.getElementById(id).classList.remove('open'); }
+function openModal(id) { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
 
-function openStudentModal(){
+function openStudentModal() {
   app.editSId = null;
   document.getElementById('smTitle').innerHTML = '<i class="fas fa-user-plus" style="color:var(--acc);"></i>Add Student';
   document.getElementById('sm-save').innerHTML = '<i class="fas fa-check"></i> Save';
@@ -1905,12 +1571,12 @@ function openStudentModal(){
   setTimeout(() => document.getElementById('sm-name').focus(), 200);
 }
 
-function openSettingsModal(){
-  if(!app.C){ toast('Select a class first.', 'error'); return; } 
+function openSettingsModal() {
+  if (!app.C) { toast('Select a class first.', 'error'); return; } 
   app.openSettings();
 }
 
-function openClassModal(){
+function openClassModal() {
   app.editCId = null;
   document.getElementById('mClassTitle').innerHTML = '<i class="fas fa-plus-circle" style="color:var(--acc);"></i>New Class';
   document.getElementById('cm-save').innerHTML = '<i class="fas fa-check"></i> Create Class';
@@ -1922,9 +1588,9 @@ function openClassModal(){
   setTimeout(() => document.getElementById('cm-name').focus(), 200);
 }
 
-function openEditClassModal(id){
+function openEditClassModal(id) {
   const c = app.D.classes[id]; 
-  if(!c) return;
+  if (!c) return;
   app.editCId = id;
   document.getElementById('mClassTitle').innerHTML = '<i class="fas fa-pen" style="color:var(--acc);"></i>Edit Class';
   document.getElementById('cm-save').innerHTML = '<i class="fas fa-save"></i> Save Changes';
@@ -1937,12 +1603,12 @@ function openEditClassModal(id){
   openModal('mClass');
 }
 
-function toggleCsw(){ 
+function toggleCsw() { 
   document.getElementById('cswBtn').classList.toggle('open'); 
   document.getElementById('cswDd').classList.toggle('open'); 
 }
 
-function closeCsw(){ 
+function closeCsw() { 
   document.getElementById('cswBtn').classList.remove('open'); 
   document.getElementById('cswDd').classList.remove('open'); 
 }
@@ -1952,7 +1618,7 @@ document.addEventListener('click', e => {
   if (w && !w.contains(e.target)) closeCsw();
 });
 
-['mClass', 'mSettings', 'mStudent', 'mDelS', 'mDelC', 'mAdmin', 'mDelUser'].forEach(id => {
+['mClass', 'mSettings', 'mStudent', 'mDelS', 'mDelC'].forEach(id => {
   document.getElementById(id).addEventListener('click', function(e) {
     if (e.target === this) closeModal(id);
   });
@@ -1960,81 +1626,6 @@ document.addEventListener('click', e => {
 
 document.getElementById('in-p').addEventListener('keydown', e => { if (e.key === 'Enter') doSignIn(); });
 document.getElementById('reg-p2').addEventListener('keydown', e => { if (e.key === 'Enter') doRegister(); });
-
-// ── ADMIN PANEL ────────────────────────────────────────────────────────────
-async function openAdminPanel() {
-  if (CU !== ADMIN.username) {
-    toast('Only the admin can access user management.', 'error');
-    return;
-  }
-  openModal('mAdmin');
-  await loadAdminPanel();
-}
-
-async function loadAdminPanel() {
-  const list  = document.getElementById('adminUserList');
-  const empty = document.getElementById('adminEmpty');
-  list.innerHTML = '<div style="padding:14px 0;text-align:center;color:var(--tx3);font-size:13px;"><i class="fas fa-spinner fa-spin" style="margin-right:8px;"></i>Loading…</div>';
-  empty.classList.add('hide');
-
-  try {
-    const teachers = await S.teachers();
-
-    if (!teachers.length) {
-      list.innerHTML = '';
-      empty.classList.remove('hide');
-      return;
-    }
-
-    list.innerHTML = '';
-    teachers.forEach(t => {
-      const isYou = t.username === CU || t.username === ADMIN.username;
-      const card  = document.createElement('div');
-      card.className = 'user-card';
-      const initials = t.name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
-      var joinDate = t.createdAt ? new Date(t.createdAt).toLocaleDateString('en-ZA', { year: 'numeric', month: 'short', day: 'numeric' }) : 'unknown';
-      card.innerHTML =
-        '<div class="user-card-avatar">' + esc(initials) + '</div>' +
-        '<div class="user-card-info">' +
-          '<div class="user-card-name">' + esc(t.name) + (isYou ? ' <span class="user-card-you">You</span>' : '') + '</div>' +
-          '<div class="user-card-meta">@' + esc(t.username) + ' &nbsp;&middot;&nbsp; Joined ' + joinDate + '</div>' +
-        '</div>' +
-        (isYou
-          ? '<span style="font-size:11px;color:var(--tx3);">Current session</span>'
-          : '<button class="btn btn-danger btn-sm delubtn" style="padding:5px 9px;"><i class="fas fa-trash-alt" style="font-size:11px;"></i> Delete</button>');
-      if (!isYou) {
-        (function(un, nm){ card.querySelector('.delubtn').addEventListener('click', function(){ confirmDeleteUser(un, nm); }); })(t.username, t.name);
-      }
-      list.appendChild(card);
-    });
-  } catch(e) {
-    list.innerHTML = '<div style="padding:14px;color:var(--red);font-size:13px;"><i class="fas fa-exclamation-circle"></i> Failed to load: ' + esc(e.message) + '</div>';
-  }
-}
-
-function confirmDeleteUser(username, name) {
-  document.getElementById('delUserName').textContent = name + ' (@' + username + ')';
-  document.getElementById('delUserBtn').onclick = async () => {
-    document.getElementById('delUserBtn').innerHTML = '<i class="fas fa-spinner fa-spin"></i> Deleting…';
-    document.getElementById('delUserBtn').disabled = true;
-    try {
-      var allData = await cloudRead();
-      allData.teachers = (allData.teachers || []).filter(function(t){ return t.username !== username; });
-      delete allData.classData[username];
-      await cloudWrite(allData);
-
-      closeModal('mDelUser');
-      toast(name + "'s account has been deleted.", "success");
-      await loadAdminPanel();
-    } catch(e) {
-      document.getElementById('delUserBtn').innerHTML = '<i class="fas fa-trash-alt"></i> Delete Account';
-      document.getElementById('delUserBtn').disabled = false;
-      toast('Delete failed: ' + e.message, 'error');
-    }
-  };
-  closeModal('mAdmin');
-  openModal('mDelUser');
-}
 
 // On page load
 document.addEventListener('DOMContentLoaded', async function() {
@@ -2048,7 +1639,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   }
 });
 
-function toast(msg, type = 'info'){
+function toast(msg, type = 'info') {
   const tc = document.getElementById('toasts');
   const t = document.createElement('div'); 
   t.className = 'toast ' + type;
